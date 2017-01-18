@@ -237,7 +237,7 @@ curl -X POST \
 
 ## 6.3. Using Cloud Code
 
-[Cloud Code](https://parse.com/docs/cloud_code/guide) provides a great solution for automating the delivery of push notifications. If you want to send a message to all your iOS devices whenever someone creates new content, you can take advantage of Parse's post-save triggers. The `Parse.Cloud.afterSave` trigger lets us execute arbitrary code after an object is saved successfully. In this example, we will send a push whenever a "Message" object is updated:
+[Cloud Code](https://parseplatform.github.io/docs/cloudcode/guide/) provides a great solution for automating the delivery of push notifications. If you want to send a message to all your iOS devices whenever someone creates new content, you can take advantage of Parse's post-save triggers. The `Parse.Cloud.afterSave` trigger lets us execute arbitrary code after an object is saved successfully. In this example, we will send a push whenever a "Message" object is updated:
 
 ```javascript
 Parse.Cloud.afterSave("Message", function(request) {
